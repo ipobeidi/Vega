@@ -18,6 +18,9 @@ namespace Vega.Models
         [Required]
         [StringLength(255)]
         public string Contactphone { get; set; }
+        [Required]
+        [StringLength(255)]
+        public string ContactName { get; set; }
         public DateTime LastUpdate { get; set; }
 
         public ICollection<VehicleFeature> Features { get; set; }
